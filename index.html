@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unified Digital Governance & Social Intelligence Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- SVG Icons -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+    <symbol id="icon-document" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none"><path d="M9 12h6M9 16h6M9 8h3M7 20h10a2 2 0 002-2V6a2 2 0 00-2-2H7a2 2 0 00-2 2v12a2 2 0 002 2z"/></symbol>
+    <symbol id="icon-parliament" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6M9 13h6M12 7v4"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none"><path d="M5 13l4 4L19 7"/></symbol>
+    <symbol id="icon-graduation" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none"><path d="M12 14l9-5-9-5-9 5 9 5zM12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></symbol>
+    <symbol id="icon-inbox" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none"><path d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"/></symbol>
+    <symbol id="icon-alert" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none"><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></symbol>
+    <symbol id="icon-chart" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></symbol>
+    <symbol id="icon-list" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none"><path d="M4 6h16M4 10h16M4 14h16M4 18h16"/></symbol>
+    <symbol id="icon-chevron" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none"><path d="M19 9l-7 7-7-7"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none"><path d="M6 18L18 6M6 6l12 12"/></symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+  </svg>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="#dashboard" class="nav-logo">Unified Digital Governance</a>
+      <ul class="nav-links">
+        <li><a href="#dashboard">Dashboard</a></li>
+        <li><a href="#narrative">Narrative</a></li>
+        <li><a href="#performance">Performance</a></li>
+        <li><a href="#content">Content Engine</a></li>
+        <li><a href="#youth">Youth Hub</a></li>
+        <li><a href="#citizen">Citizen Portal</a></li>
+        <li><a href="#analytics">Analytics</a></li>
+        <li><a href="#intelligence">Intelligence</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-gradient"></div>
+      <div class="container hero-content">
+        <h1 class="hero-title">Unified Digital Governance & Social Intelligence Platform</h1>
+        <p class="hero-subtitle">Policy intelligence, transparency, and citizen engagement infrastructure</p>
+      </div>
+    </section>
+
+    <!-- 1. Dashboard Overview -->
+    <section id="dashboard" class="section section-dashboard" data-section>
+      <div class="container">
+        <header class="section-header">
+          <h2>Executive Dashboard</h2>
+          <p class="section-subtitle">Real-time governance metrics and oversight</p>
+        </header>
+        <div class="metrics-grid">
+          <article class="metric-card card-lift" data-animate data-expandable>
+            <div class="metric-icon"><svg width="24" height="24"><use href="#icon-document"/></svg></div>
+            <h3>Parliamentary Questions</h3>
+            <p class="metric-value" data-count="247" data-suffix="">0</p>
+            <p class="metric-label">Total Asked (This Session)</p>
+            <div class="metric-expand"><p>Breakdown: Education 89, Finance 62, Youth 48, Infrastructure 48.</p></div>
+          </article>
+          <article class="metric-card card-lift" data-animate data-expandable>
+            <div class="metric-icon"><svg width="24" height="24"><use href="#icon-parliament"/></svg></div>
+            <h3>Committees Served</h3>
+            <p class="metric-value" data-count="5" data-suffix="">0</p>
+            <p class="metric-label">Active Committee Memberships</p>
+            <div class="metric-expand"><p>Education, Finance, Youth Affairs, Infrastructure, Public Accounts.</p></div>
+          </article>
+          <article class="metric-card card-lift" data-animate data-expandable>
+            <div class="metric-icon"><svg width="24" height="24"><use href="#icon-check"/></svg></div>
+            <h3>Attendance</h3>
+            <p class="metric-value" data-count="94" data-suffix="%">0</p>
+            <p class="metric-label">Session Attendance Rate</p>
+            <div class="metric-expand"><p>Above chamber average of 87%. 12 sessions attended of 13 scheduled.</p></div>
+          </article>
+          <article class="metric-card card-lift" data-animate data-expandable>
+            <div class="metric-icon"><svg width="24" height="24"><use href="#icon-graduation"/></svg></div>
+            <h3>Youth Issues Raised</h3>
+            <p class="metric-value" data-count="38" data-suffix="">0</p>
+            <p class="metric-label">Education & Skill Development</p>
+            <div class="metric-expand"><p>Scholarships, vocational training, campus infrastructure, employment.</p></div>
+          </article>
+          <article class="metric-card card-lift" data-animate data-expandable>
+            <div class="metric-icon"><svg width="24" height="24"><use href="#icon-inbox"/></svg></div>
+            <h3>Citizen Submissions</h3>
+            <p class="metric-value" data-count="1247" data-suffix="">0</p>
+            <p class="metric-label">Received This Quarter</p>
+            <div class="metric-expand"><p>Infrastructure 34%, Education 28%, Employment 22%, Healthcare 16%.</p></div>
+          </article>
+          <article class="metric-card metric-card-alert card-lift" data-animate data-expandable>
+            <div class="metric-icon"><svg width="24" height="24"><use href="#icon-alert"/></svg></div>
+            <h3>Narrative Alerts</h3>
+            <p class="metric-value" data-count="2" data-suffix="">0</p>
+            <p class="metric-label">Requiring Attention</p>
+            <div class="metric-expand"><p>Scholarship timeline claim; employment statistics. See Narrative module.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Narrative Intelligence -->
+    <section id="narrative" class="section section-narrative" data-section>
+      <div class="container">
+        <header class="section-header">
+          <h2>Narrative Monitoring</h2>
+          <p class="section-subtitle">Intelligence-driven discourse tracking and response</p>
+        </header>
+        <div class="narrative-grid">
+          <div class="narrative-main">
+            <div class="card narrative-topics">
+              <h3>Trending Topics</h3>
+              <ul class="topic-list">
+                <li class="topic-item" data-sentiment="positive">
+                  <span class="topic-name">Skill Development Scheme Expansion</span>
+                  <span class="topic-sentiment sentiment-positive">Positive</span>
+                  <span class="topic-trend">↑ 23%</span>
+                </li>
+                <li class="topic-item" data-sentiment="neutral">
+                  <span class="topic-name">Higher Education Funding</span>
+                  <span class="topic-sentiment sentiment-neutral">Neutral</span>
+                  <span class="topic-trend">→ 12%</span>
+                </li>
+                <li class="topic-item" data-sentiment="negative">
+                  <span class="topic-name">Employment Rate Concerns</span>
+                  <span class="topic-sentiment sentiment-negative">Negative</span>
+                  <span class="topic-trend">↓ 8%</span>
+                </li>
+              </ul>
+            </div>
+            <div class="card narrative-alerts">
+              <h3>Flagged Misinformation Alerts</h3>
+              <div class="alert-item">
+                <span class="alert-badge">Flagged</span>
+                <p>Claim regarding scholarship disbursement timeline circulating on social platforms. Verified: Inaccurate.</p>
+              </div>
+            </div>
+          </div>
+          <div class="narrative-sidebar">
+            <div class="card">
+              <h3>Suggested Response Draft</h3>
+              <p class="suggested-text">"The Skill Development Scheme has reached 2.3 million beneficiaries in the last fiscal year. We are committed to expanding vocational training infrastructure across all districts by Q4."</p>
+            </div>
+            <div class="card">
+              <h3>Counter-Questions</h3>
+              <ul class="counter-list">
+                <li>What is the current allocation for youth skill programs?</li>
+                <li>How does this compare to regional benchmarks?</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="topic-detail" class="card topic-detail-modal" hidden>
+          <button class="close-detail" aria-label="Close">×</button>
+          <h3>Topic Detail: <span id="detail-topic-name"></span></h3>
+          <div class="detail-grid">
+            <div>
+              <h4>Source</h4>
+              <p id="detail-source">Social media discourse, parliamentary records, news coverage</p>
+            </div>
+            <div>
+              <h4>Summary</h4>
+              <p id="detail-summary">Public interest in skill development initiatives has increased following recent policy announcements. Sentiment is largely positive with some concerns about implementation timelines.</p>
+            </div>
+            <div>
+              <h4>Recommended Strategy</h4>
+              <p id="detail-strategy">Lead with data: share beneficiary numbers and district-wise breakdown. Address timeline concerns proactively. Consider town hall for youth engagement.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. MP Performance Transparency -->
+    <section id="performance" class="section section-performance" data-section>
+      <div class="container">
+        <header class="section-header">
+          <h2>MP Performance Transparency</h2>
+          <p class="section-subtitle">Public-facing parliamentary activity and accountability</p>
+        </header>
+        <div class="performance-toolbar">
+          <div class="search-box">
+            <input type="search" placeholder="Search questions..." id="question-search">
+          </div>
+          <div class="filter-group">
+            <select id="category-filter">
+              <option value="">All Categories</option>
+              <option value="education">Education</option>
+              <option value="finance">Finance</option>
+              <option value="youth">Youth</option>
+              <option value="infrastructure">Infrastructure</option>
+            </select>
+          </div>
+          <div class="view-toggle">
+            <button type="button" class="toggle-btn active" data-view="chart" aria-pressed="true"><svg width="18" height="18"><use href="#icon-chart"/></svg> Chart</button>
+            <button type="button" class="toggle-btn" data-view="list" aria-pressed="false"><svg width="18" height="18"><use href="#icon-list"/></svg> List</button>
+          </div>
+        </div>
+        <div class="performance-views performance-view-chart">
+        <div class="performance-grid">
+          <div class="card performance-chart">
+            <h3>Topic Distribution</h3>
+            <div class="chart-bars">
+              <div class="chart-bar-row">
+                <span class="chart-label">Education</span>
+                <div class="chart-bar-track"><div class="chart-bar-fill" style="width: 35%"></div></div>
+                <span class="chart-value">35%</span>
+              </div>
+              <div class="chart-bar-row">
+                <span class="chart-label">Finance</span>
+                <div class="chart-bar-track"><div class="chart-bar-fill" style="width: 28%"></div></div>
+                <span class="chart-value">28%</span>
+              </div>
+              <div class="chart-bar-row">
+                <span class="chart-label">Youth</span>
+                <div class="chart-bar-track"><div class="chart-bar-fill" style="width: 22%"></div></div>
+                <span class="chart-value">22%</span>
+              </div>
+              <div class="chart-bar-row">
+                <span class="chart-label">Infrastructure</span>
+                <div class="chart-bar-track"><div class="chart-bar-fill" style="width: 15%"></div></div>
+                <span class="chart-value">15%</span>
+              </div>
+            </div>
+          </div>
+          <div class="card performance-timeline">
+            <h3>Major Interventions</h3>
+            <ul class="timeline-list">
+              <li><span class="timeline-date">Feb 18</span> Education budget allocation debate</li>
+              <li><span class="timeline-date">Feb 12</span> Youth employment scheme discussion</li>
+              <li><span class="timeline-date">Feb 05</span> Infrastructure development Q&A</li>
+              <li><span class="timeline-date">Jan 28</span> Skill development program review</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card questions-table-card">
+          <h3>Recent Parliamentary Questions</h3>
+          <table class="questions-table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Category</th>
+                <th>Question</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Feb 20</td><td><span class="badge badge-education">Education</span></td><td>Status of scholarship disbursement in rural districts</td></tr>
+              <tr><td>Feb 18</td><td><span class="badge badge-finance">Finance</span></td><td>Allocation for vocational training centers</td></tr>
+              <tr><td>Feb 15</td><td><span class="badge badge-youth">Youth</span></td><td>Employment opportunities for graduates</td></tr>
+              <tr><td>Feb 12</td><td><span class="badge badge-infrastructure">Infrastructure</span></td><td>Digital connectivity in educational institutions</td></tr>
+              <tr><td>Feb 10</td><td><span class="badge badge-education">Education</span></td><td>Teacher recruitment in underserved areas</td></tr>
+            </tbody>
+          </table>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Content Engine -->
+    <section id="content" class="section section-content" data-section>
+      <div class="container">
+        <header class="section-header">
+          <h2>Parliament-to-Content Studio</h2>
+          <p class="section-subtitle">Transform parliamentary discourse into accessible formats</p>
+        </header>
+        <div class="content-engine">
+          <div class="content-input card">
+            <h3>Step 1: Input Speech</h3>
+            <textarea id="speech-input" placeholder="Paste or type parliamentary speech text here...">Honourable Speaker, I rise today to discuss the critical importance of skill development for our youth. Our nation's future depends on equipping the next generation with vocational and technical capabilities. The Skill Development Scheme has already reached 2.3 million beneficiaries, and we aim to double this by 2025. I urge the House to support increased allocation for district-level training centers.</textarea>
+            <button type="button" class="btn btn-primary btn-generate" id="generate-content">Generate Content</button>
+          </div>
+          <div class="content-outputs">
+            <div class="card content-output-item">
+              <h4>30-sec Reel Script</h4>
+              <p>"Skill development isn't optional—it's essential. 2.3 million youth trained. Doubling by 2025. Your future, our priority."</p>
+            </div>
+            <div class="card content-output-item">
+              <h4>Twitter Thread</h4>
+              <p>1/ Skill development is the backbone of our economic future. 2/ 2.3M beneficiaries and growing. 3/ We're doubling capacity by 2025. 4/ District-level centers coming to your area.</p>
+            </div>
+            <div class="card content-output-item">
+              <h4>Carousel Summary</h4>
+              <p>Slide 1: The Challenge | Slide 2: 2.3M Trained | Slide 3: 2025 Target | Slide 4: Your District Next</p>
+            </div>
+            <div class="card content-output-item">
+              <h4>Youth Simplified</h4>
+              <p>We're training young people in real skills—coding, trades, design. Already 2.3 million of you. More spots coming. Stay tuned.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Youth Policy Hub -->
+    <section id="youth" class="section section-youth" data-section>
+      <div class="container">
+        <header class="section-header">
+          <h2>Youth & Skill Development Hub</h2>
+          <p class="section-subtitle">Policy explainers, Q&A, and student engagement</p>
+        </header>
+        <div class="youth-grid">
+          <div class="policy-cards">
+            <div class="card policy-card">
+              <h4>Skill Development Scheme</h4>
+              <p>Free vocational training in 50+ trades. Apply through your district office or online portal.</p>
+            </div>
+            <div class="card policy-card">
+              <h4>Scholarship Programs</h4>
+              <p>Merit and need-based support for higher education. Applications open twice yearly.</p>
+            </div>
+            <div class="card policy-card">
+              <h4>Startup Incubation</h4>
+              <p>Seed funding and mentorship for student entrepreneurs. Cohort-based intake.</p>
+            </div>
+          </div>
+          <div class="youth-main">
+            <div class="card qa-preview">
+              <h3>Live Q&A Preview</h3>
+              <div class="chat-mock">
+                <div class="chat-message chat-user"><strong>Student:</strong> When do scholarship applications open?</div>
+                <div class="chat-message chat-bot"><strong>Portal:</strong> Next cycle opens March 1. Sign up for alerts.</div>
+                <div class="chat-message chat-user"><strong>Student:</strong> Is there support for online courses?</div>
+                <div class="chat-message chat-bot"><strong>Portal:</strong> Yes. Approved platforms qualify for partial reimbursement.</div>
+              </div>
+            </div>
+            <div class="card student-poll">
+              <h3>Student Poll</h3>
+              <p class="poll-question">What skill would you most like to learn?</p>
+              <div class="poll-options">
+                <div class="poll-row">
+                  <span>Digital / Tech</span>
+                  <div class="poll-bar-track"><div class="poll-bar-fill" style="width: 42%"></div></div>
+                  <span>42%</span>
+                </div>
+                <div class="poll-row">
+                  <span>Business / Entrepreneurship</span>
+                  <div class="poll-bar-track"><div class="poll-bar-fill" style="width: 28%"></div></div>
+                  <span>28%</span>
+                </div>
+                <div class="poll-row">
+                  <span>Creative Arts</span>
+                  <div class="poll-bar-track"><div class="poll-bar-fill" style="width: 18%"></div></div>
+                  <span>18%</span>
+                </div>
+                <div class="poll-row">
+                  <span>Traditional Trades</span>
+                  <div class="poll-bar-track"><div class="poll-bar-fill" style="width: 12%"></div></div>
+                  <span>12%</span>
+                </div>
+              </div>
+            </div>
+            <div class="card why-matters">
+              <h3>Why This Matters for Students</h3>
+              <p>Skills open doors. Whether you're heading to college or straight into work, vocational training gives you an edge. Our programs are designed with industry input—so what you learn is what employers want.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Citizen Portal -->
+    <section id="citizen" class="section section-citizen" data-section>
+      <div class="container">
+        <header class="section-header">
+          <h2>Citizen-to-Parliament Portal</h2>
+          <p class="section-subtitle">Submit issues and track resolution status</p>
+        </header>
+        <div class="citizen-grid">
+          <div class="card submission-form">
+            <h3>Submit an Issue</h3>
+            <form class="submission-fields">
+              <div class="form-group">
+                <label for="category">Category</label>
+                <select id="category">
+                  <option>Infrastructure</option>
+                  <option>Education</option>
+                  <option>Healthcare</option>
+                  <option>Employment</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="district">District</label>
+                <select id="district">
+                  <option>Central</option>
+                  <option>North</option>
+                  <option>South</option>
+                  <option>East</option>
+                  <option>West</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="issue">Issue Description</label>
+                <textarea id="issue" rows="4" placeholder="Describe your concern..."></textarea>
+              </div>
+              <div class="form-group">
+                <label>Supporting Document</label>
+                <div class="upload-zone">
+                  <span>Click or drag to upload</span>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div class="citizen-list">
+            <div class="card">
+              <h3>Submitted Issues</h3>
+              <ul class="issues-list">
+                <li class="issue-item" data-status="resolved">
+                  <span class="issue-title">Road repair - Central District</span>
+                  <span class="status-badge status-resolved">Resolved</span>
+                </li>
+                <li class="issue-item" data-status="raised">
+                  <span class="issue-title">School infrastructure - North</span>
+                  <span class="status-badge status-raised">Raised in Parliament</span>
+                </li>
+                <li class="issue-item" data-status="review">
+                  <span class="issue-title">Water supply - South</span>
+                  <span class="status-badge status-review">Under Review</span>
+                </li>
+                <li class="issue-item" data-status="review">
+                  <span class="issue-title">Employment center - East</span>
+                  <span class="status-badge status-review">Under Review</span>
+                </li>
+              </ul>
+            </div>
+            <div class="card analytics-card">
+              <h3>Top Recurring Issues</h3>
+              <div class="recurring-issues">
+                <div class="recurring-item"><span>Infrastructure</span><span>34%</span></div>
+                <div class="recurring-item"><span>Education</span><span>28%</span></div>
+                <div class="recurring-item"><span>Employment</span><span>22%</span></div>
+                <div class="recurring-item"><span>Healthcare</span><span>16%</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. X Analytics -->
+    <section id="analytics" class="section section-analytics" data-section>
+      <div class="container">
+        <header class="section-header">
+          <h2>X (Twitter) Analytics Intelligence</h2>
+          <p class="section-subtitle">Engagement metrics and content optimization</p>
+        </header>
+        <div class="analytics-grid">
+          <div class="card analytics-metric" title="Based on likes, shares, and comments relative to follower count">
+            <h4>Engagement Rate</h4>
+            <p class="analytics-value">4.2%</p>
+            <p class="analytics-delta positive">+0.8% vs last month</p>
+          </div>
+          <div class="card analytics-metric" title="18-24 age segment growth over 90 days">
+            <h4>Youth Audience Growth</h4>
+            <p class="analytics-value">+18%</p>
+            <p class="analytics-delta positive">18-24 demographic</p>
+          </div>
+          <div class="card analytics-metric" title="Peak engagement window based on audience activity">
+            <h4>Best Time to Post</h4>
+            <p class="analytics-value">7–9 PM</p>
+            <p class="analytics-delta">Peak engagement window</p>
+          </div>
+          <div class="card analytics-chart-wide">
+            <h3>Engagement Trend (Line)</h3>
+            <div class="line-chart-wrap">
+              <svg class="line-chart" viewBox="0 0 400 120" preserveAspectRatio="none">
+                <path class="line-chart-path" d="M0,80 L50,75 L100,65 L150,55 L200,50 L250,45 L300,55 L350,40 L400,35" />
+              </svg>
+            </div>
+          </div>
+          <div class="card analytics-chart-wide">
+            <h3>Content Type Performance</h3>
+            <div class="chart-horizontal">
+              <div class="chart-row"><span>Policy Threads</span><div class="bar-wrap"><div class="bar-fill" style="width: 72%"></div></div><span>72%</span></div>
+              <div class="chart-row"><span>Infographics</span><div class="bar-wrap"><div class="bar-fill" style="width: 65%"></div></div><span>65%</span></div>
+              <div class="chart-row"><span>Video Clips</span><div class="bar-wrap"><div class="bar-fill" style="width: 58%"></div></div><span>58%</span></div>
+              <div class="chart-row"><span>Quick Updates</span><div class="bar-wrap"><div class="bar-fill" style="width: 45%"></div></div><span>45%</span></div>
+            </div>
+          </div>
+          <div class="card analytics-chart-wide">
+            <h3>Opposition Comparison (Engagement Index)</h3>
+            <div class="comparison-chart">
+              <div class="comparison-item">
+                <div class="comparison-bar-wrap">
+                  <div class="comparison-bar" style="height: 85%">85</div>
+                </div>
+                <span class="comparison-label">This Account</span>
+              </div>
+              <div class="comparison-item">
+                <div class="comparison-bar-wrap">
+                  <div class="comparison-bar comparison-bar-benchmark" style="height: 62%">62</div>
+                </div>
+                <span class="comparison-label">Benchmark Avg</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Policy & Opposition Intelligence Dashboard -->
+    <section id="intelligence" class="section section-intelligence" data-section>
+      <div class="container">
+        <header class="section-header section-header-dark">
+          <h2>Policy & Opposition Intelligence Dashboard</h2>
+          <p class="section-subtitle">Internal preparation and research support. Analytical workspace.</p>
+        </header>
+
+        <div class="intelligence-grid">
+          <!-- 1. Opposition Policy Tracker -->
+          <div class="intel-card intel-card-dark">
+            <h3>Opposition Policy Tracker</h3>
+            <div class="timeline-slider">
+              <div class="slider-labels">
+                <span>Past</span>
+                <input type="range" id="stance-slider" min="0" max="100" value="50">
+                <span>Present</span>
+              </div>
+            </div>
+            <div class="stance-cards">
+              <article class="stance-card" data-expandable>
+                <div class="stance-header">
+                  <span class="stance-topic">Education</span>
+                  <span class="stance-badge">Trending</span>
+                </div>
+                <p class="stance-preview">Recent statements on higher education funding and scholarship allocation.</p>
+                <div class="stance-expand">
+                  <p><strong>Historical stance:</strong> Emphasis on public university expansion. <strong>Current:</strong> Focus on vocational integration and industry partnerships.</p>
+                </div>
+                <button class="expand-trigger" aria-label="Expand"><svg width="16" height="16"><use href="#icon-chevron"/></svg></button>
+              </article>
+              <article class="stance-card" data-expandable>
+                <div class="stance-header">
+                  <span class="stance-topic">Youth Employment</span>
+                  <span class="stance-badge">Monitor</span>
+                </div>
+                <p class="stance-preview">Policy contradictions on job creation targets over past 18 months.</p>
+                <div class="stance-expand">
+                  <p><strong>2023:</strong> 5M jobs target. <strong>2024:</strong> Revised to skill-first approach. <strong>2025:</strong> Emphasis on gig economy regulation.</p>
+                </div>
+                <button class="expand-trigger" aria-label="Expand"><svg width="16" height="16"><use href="#icon-chevron"/></svg></button>
+              </article>
+            </div>
+          </div>
+
+          <!-- 2. Governance Risk & Weakness Analysis -->
+          <div class="intel-card intel-card-dark">
+            <h3>Governance Risk & Weakness Analysis</h3>
+            <div class="swot-grid">
+              <div class="swot-cell swot-strength">
+                <h4>Strengths</h4>
+                <p>Skill scheme reach, scholarship disbursement pace</p>
+              </div>
+              <div class="swot-cell swot-weakness">
+                <h4>Weaknesses</h4>
+                <p>Rural connectivity gaps, administrative delays</p>
+              </div>
+              <div class="swot-cell swot-opportunity">
+                <h4>Opportunities</h4>
+                <p>Industry partnerships, digital upskilling</p>
+              </div>
+              <div class="swot-cell swot-threat">
+                <h4>Threats</h4>
+                <p>Funding constraints, implementation capacity</p>
+              </div>
+            </div>
+            <div class="risk-heatmap">
+              <h4>Risk Heatmap</h4>
+              <div class="heatmap-grid">
+                <div class="heatmap-cell" data-level="low">Policy Design</div>
+                <div class="heatmap-cell" data-level="medium">Implementation</div>
+                <div class="heatmap-cell" data-level="high">Rural Delivery</div>
+                <div class="heatmap-cell" data-level="medium">Monitoring</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Student Sentiment Monitor -->
+          <div class="intel-card intel-card-dark">
+            <h3>Student Sentiment Monitor</h3>
+            <div class="sentiment-meter">
+              <div class="meter-bar">
+                <span class="meter-seg positive" style="width:35%">Positive</span>
+                <span class="meter-seg neutral" style="width:45%">Neutral</span>
+                <span class="meter-seg concern" style="width:20%">Concern</span>
+              </div>
+            </div>
+            <div class="topic-cloud">
+              <span class="cloud-tag">Scholarships</span>
+              <span class="cloud-tag">Placements</span>
+              <span class="cloud-tag">Fee structure</span>
+              <span class="cloud-tag">Campus facilities</span>
+              <span class="cloud-tag">Curriculum</span>
+              <span class="cloud-tag">Loans</span>
+            </div>
+            <div class="geo-indicators">
+              <span class="geo-dot" data-intensity="high">North</span>
+              <span class="geo-dot" data-intensity="medium">Central</span>
+              <span class="geo-dot" data-intensity="low">South</span>
+            </div>
+          </div>
+
+          <!-- 4. Trending Education & Youth Issues Radar -->
+          <div class="intel-card intel-card-dark">
+            <h3>Trending Education & Youth Issues Radar</h3>
+            <ul class="issues-radar-list">
+              <li class="radar-item" data-priority="high" data-issue>
+                <span class="radar-priority">High</span>
+                <span class="radar-title">Scholarship disbursement delays</span>
+                <button class="btn-prepare">Prepare Brief</button>
+              </li>
+              <li class="radar-item" data-priority="medium" data-issue>
+                <span class="radar-priority">Medium</span>
+                <span class="radar-title">Graduate employment rates</span>
+                <button class="btn-prepare">Prepare Brief</button>
+              </li>
+              <li class="radar-item" data-priority="monitor" data-issue>
+                <span class="radar-priority">Monitor</span>
+                <span class="radar-title">Vocational certification recognition</span>
+                <button class="btn-prepare">Prepare Brief</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Detail Panel (slides in from right) -->
+        <aside id="intel-detail-panel" class="intel-detail-panel" hidden>
+          <button class="panel-close" aria-label="Close"><svg width="24" height="24"><use href="#icon-close"/></svg></button>
+          <div class="panel-content">
+            <h3 id="panel-title">Issue Detail</h3>
+            <div class="panel-section">
+              <h4>Summary</h4>
+              <p id="panel-summary"></p>
+            </div>
+            <div class="panel-section">
+              <h4>Data Sources</h4>
+              <p id="panel-sources"></p>
+            </div>
+            <div class="panel-section">
+              <h4>Key Arguments</h4>
+              <p id="panel-arguments"></p>
+            </div>
+            <div class="panel-section">
+              <h4>Suggested Counter-Questions</h4>
+              <p id="panel-questions"></p>
+            </div>
+            <div class="panel-section">
+              <h4>Media Framing Angle</h4>
+              <p id="panel-framing"></p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Unified Digital Governance & Social Intelligence Platform — Demo Showcase</p>
+      <p class="footer-note">No backend. Mock data only. For demonstration purposes.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
