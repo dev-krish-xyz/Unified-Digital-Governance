@@ -938,7 +938,7 @@ body {
   color: var(--color-accent);
 }
 
-/* 7. Analytics */
+/* 8. Analytics */
 .analytics-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1131,18 +1131,18 @@ body {
   }
 }
 
-/* 8. Policy & Opposition Intelligence Dashboard */
+/* 7. Policy & Opposition Intelligence Dashboard */
 .section-intelligence {
-  background: #1e293b !important;
-  border-bottom-color: #334155;
+  background: transparent;
+  border-bottom-color: var(--color-border);
 }
 
 .section-header-dark h2 {
-  color: #f8fafc;
+  color: var(--color-text);
 }
 
 .section-header-dark .section-subtitle {
-  color: #94a3b8;
+  color: var(--color-text-muted);
 }
 
 .intelligence-grid {
@@ -1158,24 +1158,30 @@ body {
 }
 
 .intel-card-dark {
-  background: #0f172a;
-  border: 1px solid #334155;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius);
   padding: 1.5rem;
-  color: #e2e8f0;
+  color: var(--color-text);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+
+.intel-card-dark:hover {
+  box-shadow: var(--shadow-md);
 }
 
 .intel-card-dark h3 {
   margin: 0 0 1rem;
   font-size: 1rem;
   font-weight: 600;
-  color: #f8fafc;
+  color: var(--color-text);
 }
 
 .intel-card-dark h4 {
   margin: 0 0 0.5rem;
   font-size: 0.8125rem;
-  color: #94a3b8;
+  color: var(--color-text-muted);
 }
 
 .timeline-slider {
@@ -1187,7 +1193,7 @@ body {
   align-items: center;
   gap: 0.75rem;
   font-size: 0.75rem;
-  color: #94a3b8;
+  color: var(--color-text-muted);
 }
 
 .slider-labels input[type="range"] {
@@ -1204,14 +1210,14 @@ body {
 .stance-card {
   position: relative;
   padding: 1rem;
-  background: #1e293b;
-  border: 1px solid #334155;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius);
   transition: border-color var(--transition-fast);
 }
 
 .stance-card:hover {
-  border-color: #475569;
+  border-color: var(--color-accent-muted);
 }
 
 .stance-header {
@@ -1223,21 +1229,21 @@ body {
 
 .stance-topic {
   font-weight: 500;
-  color: #f8fafc;
+  color: var(--color-text);
 }
 
 .stance-badge {
   font-size: 0.6875rem;
   padding: 0.2rem 0.5rem;
   border-radius: 4px;
-  background: #334155;
-  color: #94a3b8;
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
 }
 
 .stance-preview {
   margin: 0;
   font-size: 0.8125rem;
-  color: #94a3b8;
+  color: var(--color-text-muted);
 }
 
 .stance-expand {
@@ -1253,7 +1259,7 @@ body {
 .stance-expand p {
   margin: 0.75rem 0 0;
   font-size: 0.8125rem;
-  color: #cbd5e1;
+  color: var(--color-text);
 }
 
 .expand-trigger {
@@ -1262,10 +1268,14 @@ body {
   right: 1rem;
   background: none;
   border: none;
-  color: #94a3b8;
+  color: var(--color-text-muted);
   cursor: pointer;
   padding: 0.25rem;
-  transition: transform var(--transition-fast);
+  transition: transform var(--transition-fast), color var(--transition-fast);
+}
+
+.expand-trigger:hover {
+  color: var(--color-accent);
 }
 
 .stance-card.expanded .expand-trigger {
@@ -1333,7 +1343,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #0f172a;
+  color: var(--color-text);
   font-weight: 500;
 }
 
@@ -1350,10 +1360,11 @@ body {
 
 .cloud-tag {
   padding: 0.35rem 0.75rem;
-  background: #334155;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
   border-radius: 20px;
   font-size: 0.75rem;
-  color: #cbd5e1;
+  color: var(--color-text-muted);
 }
 
 .geo-indicators {
@@ -1382,7 +1393,7 @@ body {
   align-items: center;
   gap: 1rem;
   padding: 0.75rem 0;
-  border-bottom: 1px solid #334155;
+  border-bottom: 1px solid var(--color-border);
   flex-wrap: wrap;
 }
 
@@ -1400,7 +1411,7 @@ body {
 
 .radar-item[data-priority="high"] .radar-priority { background: rgba(220, 38, 38, 0.3); color: #fca5a5; }
 .radar-item[data-priority="medium"] .radar-priority { background: rgba(245, 158, 11, 0.3); color: #fde68a; }
-.radar-item[data-priority="monitor"] .radar-priority { background: #334155; color: #94a3b8; }
+.radar-item[data-priority="monitor"] .radar-priority { background: var(--color-surface); color: var(--color-text-muted); }
 
 .radar-title {
   flex: 1;
@@ -1430,11 +1441,11 @@ body {
   width: 400px;
   max-width: 100%;
   height: 100%;
-  background: #0f172a;
-  border-left: 1px solid #334155;
+  background: var(--color-bg);
+  border-left: 1px solid var(--color-border);
   z-index: 200;
   overflow-y: auto;
-  box-shadow: -8px 0 24px rgba(0, 0, 0, 0.3);
+  box-shadow: -8px 0 24px rgba(15, 23, 42, 0.08);
   transition: transform 0.3s ease;
 }
 
@@ -1453,13 +1464,13 @@ body {
   right: 1rem;
   background: none;
   border: none;
-  color: #94a3b8;
+  color: var(--color-text-muted);
   cursor: pointer;
   padding: 0.25rem;
 }
 
 .panel-close:hover {
-  color: #f8fafc;
+  color: var(--color-text);
 }
 
 .panel-content {
@@ -1469,7 +1480,7 @@ body {
 .panel-content h3 {
   margin: 0 0 1.5rem;
   font-size: 1.125rem;
-  color: #f8fafc;
+  color: var(--color-text);
 }
 
 .panel-section {
@@ -1479,14 +1490,14 @@ body {
 .panel-section h4 {
   margin: 0 0 0.5rem;
   font-size: 0.75rem;
-  color: #94a3b8;
+  color: var(--color-text-muted);
   text-transform: uppercase;
 }
 
 .panel-section p {
   margin: 0;
   font-size: 0.875rem;
-  color: #cbd5e1;
+  color: var(--color-text);
   line-height: 1.5;
 }
 
